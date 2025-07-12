@@ -13,7 +13,7 @@ public class CollectionList {
         List<String> arrayList = new ArrayList<>(Arrays.asList("A", "B", "C"));
         List<String> linkedList = new LinkedList<>(Arrays.asList("2", "G", "H"));
         List<String> vector = new Vector<>(Arrays.asList("X", "Y", "Z"));
-
+        
         System.out.println("ArrayList: " + arrayList);
         System.out.println("LinkedList: " + linkedList);
         System.out.println("Vector: " + vector);

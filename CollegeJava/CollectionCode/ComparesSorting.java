@@ -27,6 +27,7 @@ class Student implements Comparable<Student> {
 
 // Comparator to sort Students by name
 class NameComparator implements Comparator<Student> {
+    @Override
     public int compare(Student s1, Student s2) {
         return s1.name.compareTo(s2.name);
     }
@@ -34,6 +35,7 @@ class NameComparator implements Comparator<Student> {
 
 // Comparator to sort Students by age
 class AgeComparator implements Comparator<Student> {
+    @Override
     public int compare(Student s1, Student s2) {
         return s1.age - s2.age;
     }
@@ -62,7 +64,7 @@ public class ComparesSorting {
         System.out.println("\nSorted by age (Comparator):");
         for (Student s : students) System.out.println(s);
 
-        // --- Properties class usage ---
+// -------------- Properties class usage ----------------------
         // Properties is used to maintain configuration, key-value pairs
         Properties props = new Properties();
         props.setProperty("username", "admin");
